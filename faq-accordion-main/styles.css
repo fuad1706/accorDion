@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
 * {
   padding: 0;
   margin: 0;
@@ -5,12 +7,14 @@
 }
 body {
   background-color: hsl(0, 0%, 100%);
+  font-family: "Work Sans", sans-serif;
 }
 
 .main {
   width: 100%;
-  height: 100vh;
+  /* height: 100vh; */
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   background-color: hsl(275, 100%, 97%);
@@ -19,5 +23,41 @@ body {
 .main2 {
   width: 100%;
   height: 300px;
-  background-color: hsl(292, 42%, 14%);
+  background: url(../faq-accordion-main/assets/images/background-pattern-desktop.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* margin-top: -400px; */
+}
+
+.main3 {
+  width: 500px;
+  height: 500px;
+  background-color: hsl(0, 0%, 100%);
+  transform: translateY(-150px);
+  border-radius: 10px;
+  padding: 40px 20px;
+  box-shadow: 0px 0px 20px 7px rgba(0, 0, 0, 0.2);
+}
+
+.main3 .star {
+  margin-right: 10px;
+}
+
+.main3 h1 {
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.drop1 h3,
+.drop2 h3,
+.drop3 h3,
+.drop4 h3 {
+  font-size: 15px;
+}
+.drop1 p,
+.drop2 p,
+.drop3 p,
+.drop4 p  {
+  font-size: 13px;
 }
